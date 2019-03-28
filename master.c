@@ -6,6 +6,11 @@ float soma(float s1, float s2){
 	resultado = s1+s2;
 	return resultado;
 }
+float divisao(float d1, float d2){
+	float resultado;
+	resultado = d1/d2;
+	return (resultado);
+}
 main(){
 	setlocale(LC_ALL,"portuguese");
 	int n1,n2;
@@ -19,5 +24,14 @@ main(){
 			r = soma(n1,n2);
 			printf("\n%.2f", r);
 			break;
+		case '/':
+    		if(n2==0){
+    			printf("O resultado é indefinido");
+			}
+			else{
+    			r = divisao(n1,n2);
+    			printf("\n%.2f", r);
+    			break;
+    	}
 	}
 }
