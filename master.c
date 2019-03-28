@@ -11,6 +11,11 @@ float divisao(float d1, float d2){
 	resultado = d1/d2;
 	return (resultado);
 }
+float subtracao(float sub1, float sub2){
+	float resultado;
+	resultado = sub1 - sub2;
+	return (resultado);
+}
 main(){
 	setlocale(LC_ALL,"portuguese");
 	int n1,n2;
@@ -32,6 +37,10 @@ main(){
     			r = divisao(n1,n2);
     			printf("\n%.2f", r);
     			break;
-    	}
+    		}	
+		case '-':
+    		r = subtracao(n1,n2);
+    		printf("\n%.2f", r);
+    		break;
 	}
 }
